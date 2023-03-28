@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand,sans-serif;
+}
+.carousel-inner::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0,0,0,.5);
+}
+.tabs {
+    width: 600px;
+    /* background-color: #09F; */
+    border-radius: 5px 5px 5px 5px;
+  }
+  ul#tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    overflow: auto;
+  }
+  ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+  }
+  ul#tabs-nav li:hover,
+  ul#tabs-nav li.active {
+    background-color: #fdbe33;
+  }
+  #tabs-nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  .tab-content {
+    padding: 10px;
+    border: 5px solid #fdbe33;
+    background-color: #FFF;
+  }
+
+.sec3{
+    background-image:  linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../img/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.dflex{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+
+}
+.main{
+    padding: 1rem;
+    width: 200px;
+    font-family:  Helvetica;
+}
+.main span{
+    color: white;
+    font-weight: normal;
+    font-size: 4.4rem;
+    text-align: center;
+    display: blocks;
+
+}
+
+#battery {
+  background-color: rgb(220, 215, 215);
+  border: 2px solid rgb(220, 215, 215);
+  height: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 360px;
+ }
+#battery:after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 16px;
+  position: absolute;
+  
+ 
+} 
+
+.battery-level{
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  animation: bttry-lvl 3s linear infinite;
+}
+@keyframes bttry-lvl{
+  0%{
+    width: 0%;
+    background-color: #fdbe33;
+  }
+  100%{
+    width: 100%;
+    background-color:#fdbe33;
+  }
+}
+.sec4 .img{
+  width: 400px;
+  cursor: pointer;
+}
+.sec4 .img:hover{
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+
+.sec5{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url( '../img/6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 50px;
+  height: 100%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
